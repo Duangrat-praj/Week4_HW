@@ -1,0 +1,25 @@
+Initial data sets include the following
+1 features.txt : List of all features.
+2 activity_labels.txt : Links the class labels with their activity name.
+3 train/X_train.txt : Training set.
+4 test/X_test.txt : Test set.
+5 train/subject_train.txt : Subject for each measurement from training set
+6 train/y_train.txt : Training labels.
+7 test/y_test.txt : Test labels.
+8 test/subject_test.txt : Subject for each measurement from test set
+
+Script involves the following steps:
+
+Download train and test sets of X as well as the column name (features.txt) to R, then combine them together. 
+Download train and test sets of Y, combine them together, name the table as Y.
+Download activity_labels.txt then merge it with Y. The table is still named Y.
+
+Download train and test sets of subject (subject_train.txt, subject_test.txt) to R, then combine them together and call the table as id.
+Rename the column to Subject.
+
+Merge the 3 tables (id, X, and Y) together.
+
+Search for columns with mean and std in the names.
+Rename mean to Mean, std to STD, and replace - by _.
+
+Create a tidy data set by aggregating (by mean) all column by Subject and Activity.
